@@ -6,7 +6,7 @@ Resource    ../Entities/xpath.robot
 Resource    ../Entities/testdata.robot
 
 *** Keywords ***
-user will able to open the url in browser
+user will able to launch the url in browser
        Open Browser     ${url}    ${browser}
        Maximize Browser Window
 user will able to click on button

@@ -3,8 +3,8 @@ Library     SeleniumLibrary
 Resource    ../Keywords/bookingKeywords.robot
 
 *** Keywords ***
-user will try to open url in browser
-    user will able to open the url in browser
+user will try to launch url in browser
+    user will able to launch the url in browser
 user will try to click on book a free demo button
     user will able to click on button
 user will try to enter details

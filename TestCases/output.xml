@@ -1,116 +1,124 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.0 (Python 3.12.1 on win32)" generated="2024-01-24T19:52:23.239947" rpa="false" schemaversion="5">
-<suite id="s1" name="bookingTestCase" source="C:\Users\subnalam\Desktop\Robot Framework\RobotFrameworkWithSelenium\TestCases\bookingTestCase.robot">
-<test id="s1-t1" name="Booking a Free Demo" line="6">
-<kw name="Given user will try to open url in browser" owner="bookingMainKeywords">
-<kw name="user will able to open the url in browser" owner="bookingKeywords">
+<robot generator="Robot 7.0 (Python 3.12.1 on win32)" generated="2024-01-25T12:08:46.824077" rpa="false" schemaversion="5">
+<suite id="s1" name="contactTestCase" source="C:\Users\subnalam\Desktop\Robot Framework\RobotFrameworkWithSelenium\TestCases\contactTestCase.robot">
+<test id="s1-t1" name="Contact Sales Validation" line="6">
+<kw name="Given user will try to launch url in browser" owner="contactMainKeywords">
+<kw name="user will able to launch the url in browser" owner="contactKeywords">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2024-01-24T19:52:23.515453" level="INFO">Opening browser 'Chrome' to base url 'https://www.orangehrm.com/'.</msg>
+<msg time="2024-01-25T12:08:47.078413" level="INFO">Opening browser 'Chrome' to base url 'https://www.orangehrm.com/'.</msg>
 <arg>${url}</arg>
 <arg>${browser}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2024-01-24T19:52:23.515453" elapsed="7.650917"/>
+<status status="PASS" start="2024-01-25T12:08:47.078413" elapsed="7.217883"/>
 </kw>
 <kw name="Maximize Browser Window" owner="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" start="2024-01-24T19:52:31.166370" elapsed="0.124404"/>
+<status status="PASS" start="2024-01-25T12:08:54.296296" elapsed="0.139483"/>
 </kw>
-<status status="PASS" start="2024-01-24T19:52:23.515453" elapsed="7.775321"/>
+<status status="PASS" start="2024-01-25T12:08:47.078413" elapsed="7.357366"/>
 </kw>
-<status status="PASS" start="2024-01-24T19:52:23.514448" elapsed="7.776326"/>
+<status status="PASS" start="2024-01-25T12:08:47.077240" elapsed="7.358539"/>
 </kw>
-<kw name="When user will try to click on book a free demo button" owner="bookingMainKeywords">
-<kw name="user will able to click on button" owner="bookingKeywords">
+<kw name="When user will try to click on contact sales button" owner="contactMainKeywords">
+<kw name="user will able to click on button" owner="contactKeywords">
 <kw name="Click Button" owner="SeleniumLibrary">
-<msg time="2024-01-24T19:52:31.292770" level="INFO">Clicking button '//*[@id="navbarSupportedContent"]/div[2]/ul/li[1]/a/button'.</msg>
-<arg>${book_button}</arg>
+<msg time="2024-01-25T12:08:54.439744" level="INFO">Clicking button '//*[@id="navbarSupportedContent"]/div[2]/ul/li[2]/a/button'.</msg>
+<arg>${contact_btn}</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2024-01-24T19:52:31.291772" elapsed="1.976222"/>
+<status status="PASS" start="2024-01-25T12:08:54.437742" elapsed="2.159216"/>
 </kw>
-<status status="PASS" start="2024-01-24T19:52:31.291772" elapsed="1.976222"/>
+<status status="PASS" start="2024-01-25T12:08:54.437742" elapsed="2.159216"/>
 </kw>
-<status status="PASS" start="2024-01-24T19:52:31.291772" elapsed="1.976222"/>
+<status status="PASS" start="2024-01-25T12:08:54.436742" elapsed="2.161214"/>
 </kw>
-<kw name="And user will try to enter details" owner="bookingMainKeywords">
-<kw name="user will able to enter the details" owner="bookingKeywords">
-<kw name="Page Should Contain" owner="SeleniumLibrary">
-<msg time="2024-01-24T19:52:33.297649" level="INFO">Current page contains text 'We Just Need a Few Details.'.</msg>
-<arg>We Just Need a Few Details.</arg>
-<doc>Verifies that current page contains ``text``.</doc>
-<status status="PASS" start="2024-01-24T19:52:33.269997" elapsed="0.028678"/>
-</kw>
+<kw name="And user will try to enter the details" owner="contactMainKeywords">
+<kw name="user will able to enter all his details" owner="contactKeywords">
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-01-24T19:52:33.298675" level="INFO">Typing text 'Hash' into text field '//*[@id="Form_getForm_FullName"]'.</msg>
+<msg time="2024-01-25T12:08:56.600954" level="INFO">Typing text 'Hash' into text field '//*[@id="Form_getForm_FullName"]'.</msg>
 <arg>${name_xp}</arg>
 <arg>${name}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-01-24T19:52:33.298675" elapsed="0.302921"/>
+<status status="PASS" start="2024-01-25T12:08:56.599960" elapsed="0.294600"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-01-24T19:52:33.602596" level="INFO">Typing text 'hash@gmail.com' into text field '//*[@id="Form_getForm_Email"]'.</msg>
-<arg>${email_xp}</arg>
-<arg>${email}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-01-24T19:52:33.601596" elapsed="0.264077"/>
-</kw>
-<kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-01-24T19:52:33.866704" level="INFO">Typing text 'google' into text field '//*[@id="Form_getForm_CompanyName"]'.</msg>
-<arg>${company_xp}</arg>
-<arg>${company}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-01-24T19:52:33.866704" elapsed="0.204633"/>
-</kw>
-<kw name="Select From List By Value" owner="SeleniumLibrary">
-<msg time="2024-01-24T19:52:34.072332" level="INFO">Selecting options from selection list '//*[@id="Form_getForm_Country"]' by value India.</msg>
-<arg>${country_xp}</arg>
-<arg>${country}</arg>
-<doc>Selects options from selection list ``locator`` by ``values``.</doc>
-<status status="PASS" start="2024-01-24T19:52:34.072332" elapsed="0.135142"/>
-</kw>
-<kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-01-24T19:52:34.207474" level="INFO">Typing text '1234567890' into text field '//*[@id="Form_getForm_Contact"]'.</msg>
+<msg time="2024-01-25T12:08:56.895560" level="INFO">Typing text '1234567890' into text field '//*[@id="Form_getForm_Contact"]'.</msg>
 <arg>${phone_number_xp}</arg>
 <arg>${phone_number}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-01-24T19:52:34.207474" elapsed="0.128647"/>
+<status status="PASS" start="2024-01-25T12:08:56.895560" elapsed="0.203148"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-01-25T12:08:57.098708" level="INFO">Typing text 'hash@gmail.com' into text field '//*[@id="Form_getForm_Email"]'.</msg>
+<arg>${email_xp}</arg>
+<arg>${email}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-01-25T12:08:57.098708" elapsed="0.237108"/>
+</kw>
+<kw name="Select From List By Value" owner="SeleniumLibrary">
+<msg time="2024-01-25T12:08:57.336815" level="INFO">Selecting options from selection list '//*[@id="Form_getForm_Country"]' by value India.</msg>
+<arg>${country_xp}</arg>
+<arg>${country}</arg>
+<doc>Selects options from selection list ``locator`` by ``values``.</doc>
+<status status="PASS" start="2024-01-25T12:08:57.336815" elapsed="0.201206"/>
+</kw>
+<kw name="Select From List By Value" owner="SeleniumLibrary">
+<msg time="2024-01-25T12:08:57.539023" level="INFO">Selecting options from selection list '//*[@id="Form_getForm_NoOfEmployees"]' by value 76 - 100.</msg>
+<arg>${num_of_employees_xp}</arg>
+<arg>${num_of_employees}</arg>
+<doc>Selects options from selection list ``locator`` by ``values``.</doc>
+<status status="PASS" start="2024-01-25T12:08:57.539023" elapsed="0.195292"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-01-25T12:08:57.734315" level="INFO">Typing text 'Senior Software Analyst' into text field '//*[@id="Form_getForm_JobTitle"]'.</msg>
+<arg>${job_title_xp}</arg>
+<arg>${job_title}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-01-25T12:08:57.734315" elapsed="0.201478"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-01-25T12:08:57.935793" level="INFO">Typing text 'I Would like to know about your service, Please kindly contact me with my email address, thank you.' into text field '//*[@id="Form_getForm_Comment"]'.</msg>
+<arg>${message_xp}</arg>
+<arg>${message}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-01-25T12:08:57.935793" elapsed="0.289691"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2024-01-24T19:52:54.337406" level="INFO">Slept 20 seconds.</msg>
+<msg time="2024-01-25T12:09:18.225671" level="INFO">Slept 20 seconds.</msg>
 <arg>20s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2024-01-24T19:52:34.336121" elapsed="20.001285"/>
+<status status="PASS" start="2024-01-25T12:08:58.225484" elapsed="20.000187"/>
 </kw>
 <kw name="Click Button" owner="SeleniumLibrary">
-<msg time="2024-01-24T19:52:54.338507" level="INFO">Clicking button '//*[@id="Form_getForm_action_submitForm"]'.</msg>
-<arg>${free_demo_btn_xp}</arg>
+<msg time="2024-01-25T12:09:18.225671" level="INFO">Clicking button '//*[@id="Form_getForm_action_submitForm"]'.</msg>
+<arg>${contact_sales_btn}</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2024-01-24T19:52:54.338507" elapsed="2.290295"/>
+<status status="PASS" start="2024-01-25T12:09:18.225671" elapsed="2.374417"/>
 </kw>
-<status status="PASS" start="2024-01-24T19:52:33.269997" elapsed="23.358805"/>
+<status status="PASS" start="2024-01-25T12:08:56.599960" elapsed="24.000128"/>
 </kw>
-<status status="PASS" start="2024-01-24T19:52:33.268996" elapsed="23.359806"/>
+<status status="PASS" start="2024-01-25T12:08:56.597956" elapsed="24.003125"/>
 </kw>
-<kw name="Then user will try to see thank you text" owner="bookingMainKeywords">
-<kw name="user will able to see the thank you text" owner="bookingKeywords">
+<kw name="Then user will try to see the thank you message" owner="contactMainKeywords">
+<kw name="user will able to see the thank you message displayed" owner="contactKeywords">
 <kw name="Page Should Contain" owner="SeleniumLibrary">
-<msg time="2024-01-24T19:52:56.668907" level="INFO">Current page contains text 'Thank you.'.</msg>
+<msg time="2024-01-25T12:09:20.632132" level="INFO">Current page contains text 'Thank you.'.</msg>
 <arg>Thank you.</arg>
 <doc>Verifies that current page contains ``text``.</doc>
-<status status="PASS" start="2024-01-24T19:52:56.629800" elapsed="0.039107"/>
+<status status="PASS" start="2024-01-25T12:09:20.603116" elapsed="0.029016"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2024-01-24T19:52:58.670470" level="INFO">Slept 2 seconds.</msg>
+<msg time="2024-01-25T12:09:22.632741" level="INFO">Slept 2 seconds.</msg>
 <arg>2s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2024-01-24T19:52:56.668907" elapsed="2.001563"/>
+<status status="PASS" start="2024-01-25T12:09:20.632132" elapsed="2.000767"/>
 </kw>
-<status status="PASS" start="2024-01-24T19:52:56.629800" elapsed="2.040670"/>
+<status status="PASS" start="2024-01-25T12:09:20.602086" elapsed="2.030813"/>
 </kw>
-<status status="PASS" start="2024-01-24T19:52:56.629800" elapsed="2.040670"/>
+<status status="PASS" start="2024-01-25T12:09:20.602086" elapsed="2.030813"/>
 </kw>
-<status status="PASS" start="2024-01-24T19:52:23.513449" elapsed="35.158311"/>
+<status status="PASS" start="2024-01-25T12:08:47.077080" elapsed="35.557074"/>
 </test>
-<status status="PASS" start="2024-01-24T19:52:23.241939" elapsed="35.432116"/>
+<status status="PASS" start="2024-01-25T12:08:46.826383" elapsed="35.810142"/>
 </suite>
 <statistics>
 <total>
@@ -119,7 +127,7 @@
 <tag>
 </tag>
 <suite>
-<stat pass="1" fail="0" skip="0" id="s1" name="bookingTestCase">bookingTestCase</stat>
+<stat pass="1" fail="0" skip="0" id="s1" name="contactTestCase">contactTestCase</stat>
 </suite>
 </statistics>
 <errors>
