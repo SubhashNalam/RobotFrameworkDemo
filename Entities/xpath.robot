@@ -11,4 +11,4 @@ ${contact_btn}        //*[@id="navbarSupportedContent"]/div[2]/ul/li[2]/a/button
 ${num_of_employees_xp}    //*[@id="Form_getForm_NoOfEmployees"]
 ${job_title_xp}        //*[@id="Form_getForm_JobTitle"]
 ${message_xp}    //*[@id="Form_getForm_Comment"]
-${contact_sales_btn}        //*[@id="Form_getForm_action_submitForm"]
+${contact_sales_btn}        //div[@class='btn-toolbar']//input[@name='action_submitForm']
