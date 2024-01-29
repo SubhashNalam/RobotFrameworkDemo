@@ -8,9 +8,11 @@ Resource    ../Entities/testdata.robot
 user will able to launch the url in browser
     Open Browser    ${url}    ${browser}
     Maximize Browser Window
+    Capture Page Screenshot
 user will able to click on button
     Click Button    ${contact_btn}
 user will able to enter all his details
+    Capture Page Screenshot
     Input Text    ${name_xp}    ${name}
     Input Text    ${phone_number_xp}    ${phone_number}
     Input Text    ${email_xp}    ${email}
@@ -18,8 +20,10 @@ user will able to enter all his details
     Select From List By Value    ${num_of_employees_xp}    ${num_of_employees}
     Input Text    ${job_title_xp}    ${job_title}
     Input Text    ${message_xp}    ${message}
+    Capture Page Screenshot
     Sleep    20s        #manually clicking CAPTCHA
     Click Button    ${contact_sales_btn}
 user will able to see the thank you message displayed
     Page Should Contain    Thank you.
+    Capture Page Screenshot
     Sleep    2s
