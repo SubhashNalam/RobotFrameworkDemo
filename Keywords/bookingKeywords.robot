@@ -2,7 +2,7 @@
 Library     SeleniumLibrary
 #Resource    ../MainKeywords/bookingMainKeywords.robot
 Resource    ../Entities/url.robot
-Resource    ../Entities/xpath.robot
+Resource    ../Entities/locators.robot
 Resource    ../Entities/testdata.robot
 
 *** Keywords ***
